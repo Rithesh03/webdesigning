@@ -1,0 +1,63 @@
+h1{
+    padding: 40px 30px 10px 30px;
+    text-align: center;
+    color:rgb(207, 127, 136);
+    font-weight: 800;
+}
+body{
+    background: url("/image/img0.jpg");
+}
+.box{
+    width: 400px;
+    height: 500px;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin:auto;
+    border-radius: 8px;
+    
+}
+.input label{
+    text-transform:capitalize;
+    display: block;
+    margin: 10px 20px;
+    
+}
+.input input{
+    text-transform: capitalize;
+    border-radius:8px;
+    margin-left: 20px;
+    width: 350px;
+    padding: 8px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+   
+}
+.rad{
+    display: block;
+    margin:10px 20px 30px;
+
+}
+
+button{
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(129, 227, 137, 0.866);
+    color:white;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 40%;
+    border: 0px;
+    
+
+
+}
+div{
+    color:white;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+button:hover{
+    background:rgba(6, 248, 6, 0.489);
+}

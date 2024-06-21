@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>df</title>
+</head>
+<body>
+  <table border="2">
+    <tr>
+    <td><input type="text" class="name">
+    <input type="text" class="id">
+    <input type="text" class="age">
+    <button onclick="save1()">save</button></td>
+    </tr>
+    </table>
+    <table border="2" id="eee">
+        <tr>
+            <td>name</td>
+            <td>id</td>
+            <td>age</td>
+            <td>action</td>
+        </tr>
+        <tr>
+          <td>fg</td>
+          <td>frg</td>
+          <td>fh</td>
+          <td id="ff">drg</td>
+        </tr>
+        </table>
+
+</body>
+<script>
+  
+   
+   function save1()
+  {
+    var name=document.querySelector(".name").value;
+    var id=document.querySelector(".id").value;
+    var age=document.querySelector(".age").value;
+    var ff=document.getElementById("ff")
+    var table=document.getElementsByTagName("table")[1];
+    var newrow=table.insertRow(1);
+
+    var cel1=newrow.insertCell(0);
+    var cel2=newrow.insertCell(1);
+    var cel3=newrow.insertCell(2);
+    var cel4=newrow.insertCell(3);
+
+    cel1.innerHTML=name;
+    cel2.innerHTML=id;
+    cel3.innerHTML=age;
+    cel4.innerHTML="<button onclick='dd(this)'>erg</button>";
+  }
+
+  function dd(td)
+  {
+    var index,table=document.getElementById("eee");
+  for(var i=0;i<table.rows.length;i++)
+  {
+    table.rows[i].cells[3].onclick=function(event)
+    {
+      index =this.parentElement.rowIndex;
+      table.deleteRow(index)
+      console.log(index);
+    }
+
+  }
+}
+</script>
+</html>

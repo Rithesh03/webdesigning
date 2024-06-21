@@ -1,0 +1,65 @@
+#in{
+    width: 300px;
+    height: 302px;
+
+    position: absolute;
+    margin-top: 81px;
+    margin-left: 81px; 
+    border-radius: 30px;
+     
+   
+}
+#outer{
+    width: 600px;
+    height: 300px;
+    margin: 80px;
+   background:linear-gradient(rgb(234, 160, 51),black);
+   position: absolute;
+   display: flex 1;
+   border-radius: 30px;
+}
+#in img{
+    width: 250px;
+    height: 200px;
+    border-radius: 30px;
+    margin-left: 25px;
+    margin-top: 10px;
+    
+}
+#in label{
+    display: flex;
+    margin: 10px 50px;
+    color: white;    
+}
+#in input{
+    width: 200px;
+    height: 30px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 1px 10px;
+}
+#outer label{
+    margin-left: 340px;
+    color: white;
+    
+}
+#outer input{
+    width: 70px;
+    margin-left: 420px;
+    margin-bottom: 20px;
+    
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 1px 10px;
+}
+#avg{
+margin-top: 30px;
+position: absolute;
+
+}
+#inp{
+    margin-top: 50px;
+}

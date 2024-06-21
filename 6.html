@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random game</title>
+</head>
+<body>
+    <h1>guess random number</h1>
+    <input id="input">
+    <button onclick="check()">check</button>
+    <p id="score">score:10</p>
+    <p id="result">result</p>
+    <p id="555">random</p>
+    <script>
+        var gessnumber = document.getElementById("input")
+        var result =document.getElementById("result")
+        var score =document.getElementById("score")
+        var ran =document.getElementById("555")
+        var totalscoure=10
+        function check()
+        {
+            var randomNumber = Math.floor(Math.random()*10)+1
+            var enternumber = gessnumber.value
+            ran.textContent=randomNumber
+            if(randomNumber==enternumber)
+            {
+                result.textContent="right"
+                alert("you won")
+            }
+            else
+            {
+                totalscoure=totalscoure-1
+                score.textContent="Score:"+totalscoure
+                result.textContent="wrong"
+            }
+        }
+
+    </script>
+</body>
+</html>

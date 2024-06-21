@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button onclick="press()">click</button>
+    <h1 id="result"></h1>
+</body>
+<script>
+    var result=document.getElementById("result")
+    function press()
+    {
+        var nextline=document.createElement("h1")
+        nextline.textContent="Hello"
+        result.append(nextline)
+    }
+</script>
+</html>

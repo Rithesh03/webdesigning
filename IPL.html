@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ipl.css">
+</head>
+<body>
+    <input type="file" accept="image/jpeg, image/png, image/jpg" id="inputfile">
+    <div id="outer">
+        <label id="avg">Avg:</label>
+        <input id="inp">
+        <label id="rate">Strick Rate:</label>
+        <input>
+        <label id="Score">Highest score:</label>
+        <input>
+        <label>Econ:</label>
+        <input>
+    
+    </div>
+    <div id="in">
+        <img src="image/chilli.jpg" id="profile">
+        <label>Player Name</label>
+        <input>
+    </div>
+</body>
+<script>
+var profile =document.getElementById("profile");
+var inpfile =document.getElementById("inputfile");
+
+inpfile.onchange =function(){
+    profile.src = URL.createObjectURL(inpfile.files[0]);
+}
+</script>
+</html>

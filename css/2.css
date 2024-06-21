@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.image{
+    background-image: url(/image/chilli.jpg);
+
+    height: 90vh;
+}
+header{
+    display: flex;
+    padding: 10px;
+}
+.logo{
+    color:rgb(236, 214, 10);
+    flex: 3;
+    text-transform: capitalize;
+
+}
+a{
+    color:rgb(236, 214, 10);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+nav{
+    flex: 2;
+    display: flex;
+}
+nav a{
+    flex: 1;
+}
+.main{
+    color: aqua;
+    display: flex;
+    flex-direction: column;
+    padding:5px 10px;
+    height: 60vh;
+    justify-content:center;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+}
+button{
+    width: 20vw;
+    background-color: rgb(17, 222, 126);
+    border-radius: 5px;
+    border:none;
+    margin: 10px 0px;
+    color: white;
+}
+.mai1{
+    color: rgb(226, 22, 22);
+}
+.mai2{
+    color:rgb(236, 214, 10);
+    
+}
+#menu{
+    font-weight: bolder;
+    text-transform:uppercase;
+    display: flex;
+    justify-content: center;
+    color: red;
+    background-color: rgb(40, 58, 50);
+
+}
+.menu th{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: greenyellow;
+    display: flex;
+}
+.menu td{
+    font-size: 12px;
+
+}
+.menu{
+    padding: 1em;
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    color: white;
+    background-color: rgb(40, 58, 50);
+}
+.location h1{
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+.location{
+    background-color: rgb(40, 58, 50);
+    color: aliceblue;
+    padding: 30px 20px;
+}
+.location{
+    text-transform: capitalize;
+}
+
+

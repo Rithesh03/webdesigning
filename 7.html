@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+div{
+    width: 200px;
+    height: 300px;
+    background: red;
+}
+.bbb{
+    width: 500px;
+    background: bisque;
+    transition: 10s;
+}
+</style>
+<body>
+    <div id="clr"></div>
+    <button onclick="change()">click</button>
+</body>
+<script>
+    var box=document.getElementById("clr")
+    function change()
+    {
+        box.setAttribute("class","bbb")
+    }
+</script>
+</html>

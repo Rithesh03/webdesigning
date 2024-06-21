@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form sample</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #form{
+        background-color: aqua;
+        width: 50%;
+        padding: 20px;
+        border-radius: 20px;
+        
+    }
+    input{
+        width: 100%;
+        padding: 2px;
+        margin-top: 10px;
+    }
+    textarea{
+        width: 100%;
+        padding: 2px;
+        margin-top: 10px;
+    }
+    button{
+        border: none;
+        background-color: black;
+        color: azure;
+        padding: 8px;
+        border-radius: 10px;
+        
+    }
+</style>
+<center>
+<body>
+    <form id="form">
+        <input type="text" placeholder="name" id="usname">
+        <span id="nameer"></span>
+        <input type="password" placeholder="password" id="uspass">
+        <span id="passer"></span>
+        <textarea placeholder="address" id="usadd"></textarea>
+        <span id="adder"></span>
+        <button id="usbut">submit</button>
+    </form>
+</body>
+</center>
+<script>
+    var usname=document.getElementById("usname");
+    var uspass=document.getElementById("uspass");
+    var usadd=document.getElementById("usadd");
+    var usbut=document.getElementById("usbut");
+    var nameer=document.getElementById("nameer");
+    var passer=document.getElementById("passer");
+    var adder=document.getElementById("adder");
+    usbut=addEventListener("click",function(event){
+        if(usname.value === "" || usname.value == null)
+        {
+        event.preventDefault()
+    nameer.textContent="error";
+        }
+        else
+        {
+
+        }
+        if(uspass.value === "" || usname.value == null)
+        {
+        event.preventDefault()
+    nameer.textContent="error";
+        }
+        else
+        {
+            
+        }
+    })
+</script>
+</html>

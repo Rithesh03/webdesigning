@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>samble project</title>
+</head>
+<body>
+    <center>
+    <h1>STUDENTS FORM</h1>
+    <table border="2">
+        <tr>
+        <td><b>Name</b></td>
+        <td ><input class="name"></td>
+        </tr>
+        <tr>
+            <td><b>Age</b></td>
+            <td ><input class="age"></td>
+        </tr>
+        <tr>
+            <td><b>Gender</b></td>
+            <td><input type="radio" name="r1" value="male" class="rad">Male
+            <input type="radio" name="r1" value="female" class="rad">Female</td>
+        </tr>
+        <tr>
+            <td><b>Course</b></td>
+            <td ><select name=s1 class="course">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>java script</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><b>E-mail</b></td>
+            <td ><input class="mail"></td>
+        </tr>
+        <tr align="center"><td colspan="2"><button onclick="save1()">save</button></td></tr>
+    </table>
+    <table border="2" id="result">
+        <tr>
+            <th> Name</th>
+            <th> Age</th>
+            <th> Course</th>
+            <th> Gender</th>
+            <th> Email</th>
+            <th> Action</th>
+        </tr>
+    </table>
+    <style>
+    #result button {
+        background-color:red;
+        width: 80px;
+
+    }
+    button{
+        background-color: aquamarine;
+        width: 230px;
+    }
+    .course{
+        width: 170px;
+    }
+    </style>
+</body>
+<script>
+    
+    function save1()
+    {
+        var name=document.querySelector(".name").value;
+        var age=document.querySelector(".age").value;
+        var check=document.querySelector('input[name="r1"]:checked').value;
+        var course=document.querySelector(".course").value;
+        var mail=document.querySelector(".mail").value;
+        var table=document.getElementsByTagName("table")[1];
+        var newrow=table.insertRow(1);
+        var cel1=newrow.insertCell(0);
+        var cel2=newrow.insertCell(1);
+        var cel3=newrow.insertCell(2);
+        var cel4=newrow.insertCell(3);
+        var cel5=newrow.insertCell(4);
+        var cel6=newrow.insertCell(5);
+
+        cel1.innerHTML=name;
+        cel2.innerHTML=age;
+        cel4.innerHTML=check;
+        cel3.innerHTML=course;
+        cel5.innerHTML=mail;
+        cel6.innerHTML="<button onclick='ff(this)'>delete</button>";
+
+        restform();
+    }
+    function ff(td)
+    {
+        var result,table=document.getElementById("result")
+        for(var a=0;a<table.rows.length;a++)
+        {
+            table.rows[a].cells[5].onclick=function()
+            {
+                index=this.parentElement.rowIndex;
+                table.deleteRow(index)
+                concole.lod(index)
+            }
+        }
+    }
+    function restform()
+    {
+        document.querySelector(".name").value="";
+        document.querySelector(".age").value="";
+        document.querySelector('input[name="r1"]:checked').value="";
+        document.querySelector(".course").value="";
+        document.querySelector(".mail").value="";
+    }
+    
+</script>
+</html>
